@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/index.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/tables.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="Img/close_up.ico">
+    <title>Share a Memory</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="memories.html">Share a Memory</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Share Your Memory</h2>
+        <form action="submit-memory" method="post">
+            <label for="catName">Cat's Name:</label>
+            <input type="text" id="catName" name="catName" required>
+
+            <label for="yearsTogether">Years Together:</label>
+            <input type="number" id="yearsTogether" name="yearsTogether" min="0" max="30">
+
+            <label for="memory">Your Favorite Memory:</label>
+            <textarea id="memory" name="memory" rows="5" required></textarea>
+
+            <label for="photo">Upload a Photo:</label>
+            <input type="file" id="photo" name="photo">
+
+            <button type="submit">Submit Memory</button>
+        </form>
+    </main>
+</body>
+</html>
